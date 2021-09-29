@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url('../Oswald-VariableFont_wght.ttf') format('truetype')
+}
+
+#header {
+    background-color: #3ed8b3;
+    width: 100%;
+    height: 120px;
+    z-index: 300;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+body {
+    margin: 0px;
+}
+
+#header img {
+    margin: 10px 20px 10px 10px;
+    height: 100px;
+    width: 100px;
+    z-index: 300;
+}
+
+#header h1 {
+    margin: 10px 0px 10px 10px;
+    left: 110px;
+    top: 0px;
+    position: absolute;
+    font-family: 'Oswald';
+    font-size: 60px;
+    color: #ffffff;
+    text-shadow: 5px 5px 5px black;
+}
+
+#navbar {
+    position: absolute;
+    height: auto;
+    width: 270px;
+    top: 0px;
+    left: -300px;
+    z-index: 50;
+    background-color: #3ed8b3;
+    transition: left 0.5s;
+    padding: 190px 15px 15px;
+}
+
+#navbar-trigger {
+    background-color: #3ed8b3;
+    width: 80px;
+    height: 60px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: absolute;
+    top: 130px;
+    left: -20px;
+    z-index: 200;
+}
+
+#navbar-trigger img {
+    height: 60px;
+    margin-left: 20px;
+    transition: transform 0.5s;
+    z-index: 201;
+    pointer-events: none;
+}
+
+.navbar-link {
+    text-decoration: none;
+    font-family: 'Oswald';
+    color: white;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.navbar-link a {
+    text-decoration: none;
+    font-family: 'Oswald';
+    color: white;
+}
+
+.navbar-link:hover a {
+    text-decoration: underline;
+    font-family: 'Oswald';
+    color: white;
+}
+
+#body {
+    background-color: #e0e0e0;
+    position: absolute;
+    height: auto;
+    width: 100%;
+    z-index: 0;
+}
+
+#body #content {
+    background-color: white;
+    margin: 190px 100px 70px;
+    width: auto;
+    height: auto;
+    padding: 30px;
+}
+
+#content-title {
+    text-align: center;
+    font-family: 'Oswald';
+    font-size: 4vw;
+}
+
+* {
+    -webkit-user-drag: none;
+}
+
+*::selection {
+    color: none;
+    background: none;
+    text-shadow: none;
+}
