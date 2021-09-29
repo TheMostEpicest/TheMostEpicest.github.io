@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EpicestBot Documentation</title>
+        <link href='../styles/index.css' type='text/css' rel='stylesheet'>
+        <link href='../styles/commands.css' type='text/css' rel='stylesheet'>
+        <link href='https://themostepicest.github.io/cloud/botlogo.png' type='image/png' rel='shortcut icon'>
+    </head>
+    <body>
+        <div id='header'>
+            <a href='..'><img draggable='false' src='https://themostepicest.github.io/cloud/botlogo.png'></a>
+            <h1>EpicestBot</h1>
+        </div>
+        <div id='navbar-trigger'>
+            <img src='../resource/arrow.png' draggable='false' id='navbar-arrow'>
+        </div>
+        <div id='navbar'>
+            <h3 class='navbar-link'><a href='.'>Built-in Commands</a></h3>
+            <h3 class='navbar-link'><a href='../custom-commands/'>Custom Commands</a></h3>
+            <h3 class='navbar-link'><a href='../user-levels/'>User Level</a></h3>
+        </div>
+        <div id='body'>
+            <div id='content'>
+                <h2 id='content-title'>Built-in Commands</h2>
+                <p class='content-p'>These are all of the built-in commands you can use with EpicestBot in any channel it is active in. Each built-in command has an associated required user-level. More information about user-levels can be found <a href='../user-levels/'>here</a>.</p>
+                <table>
+                    <tr>
+                        <th>Command</th>
+                        <th>Explanation</th>
+                        <th>User Level</th>
+                    </tr>
+                    <tr>
+                        <td>?addcount [count]</td>
+                        <td>Adds a counter to yourself to track how many times you have said the given count.</td>
+                        <td>Everyone</td>
+                    </tr>
+                    <tr>
+                        <td>?counts [username ?]</td>
+                        <td>Returns all counters for you or the given username.</td>
+                        <td>Everyone</td>
+                    </tr>
+                    <tr>
+                        <td>?count [username ?] [count]</td>
+                        <td>Returns the number times you or the given username has used the given count. Counters must be initialized using ?addcount before being read.</td>
+                        <td>Everyone</td>
+                    </tr>
+                    <tr>
+                        <td>?ecount [emote]</td>
+                        <td>Returns the number of times an emote has been used in chat.</td>
+                        <td>Everyone</td>
+                    </tr>
+                    <tr>
+                        <td>?help</td>
+                        <td>Pings TheMostEpicest for help.</td>
+                        <td>Everyone</td>
+                    </tr>
+                    <tr>
+                        <td>?toggle [on|off]</td>
+                        <td>Toggles the bot on or off in a channel. 'On' or 'Off" must be specified.</td>
+                        <td>Toggler</td>
+                    </tr>
+                    <tr>
+                        <td>?addcount [username ?] [count]</td>
+                        <td>Adds a counter to yourself or the given username to track how many times you or they have said the given count.</td>
+                        <td>Counter</td>
+                    </tr>
+                    <tr>
+                        <td>?delcount [username ?] [count]</td>
+                        <td>Deletes a counter from yourself or the given username.</td>
+                        <td>Counter</td>
+                    </tr>
+                    <tr>
+                        <td>?reload</td>
+                        <td>Reloads all channel emotes and commands.</td>
+                        <td>Operator</td>
+                    </tr>
+                    <tr>
+                        <td>?return [command]</td>
+                        <td>Returns the return for a given command.</td>
+                        <td>Operator</td>
+                    </tr>
+                    <tr>
+                        <td>?property [command] [ul|cd|pre|case]</td>
+                        <td>Returns a given property for a given command.</td>
+                        <td>Operator</td>
+                    </tr>
+                    <tr>
+                        <td>?prefix [newPrefix ?]</td>
+                        <td>Sets or returns the prefix of a channel. If no argument is passed, it will return the prefix, otherwise it will set the prefix to argument 1. (Deprecated)</td>
+                        <td>Operator</td>
+                    </tr>
+                    <tr>
+                        <td>?version</td>
+                        <td>Returns to version number the bot is running.</td>
+                        <td>Operator</td>
+                    </tr>
+                    <tr>
+                        <td>?addcom [command] [-[ul|cd|pre|case]=value ?] [return]</td>
+                        <td>Adds a new command. See <a href='../custom-commands'>Custom Commands</a> for more information on custom commands.</td>
+                        <td>Operator</td>
+                    </tr>
+                    <tr>
+                        <td>?editcom [command] [-[ul|cd|pre|case]=value ?] [return ?]</td>
+                        <td>Edits and existing command. See <a href='../custom-commands'>Custom Commands</a> for more information on custom commands.</td>
+                        <td>Operator</td>
+                    </tr>
+                    <tr>
+                        <td>?delcom [command]</td>
+                        <td>Deletes a given custom command.</td>
+                        <td>Operator</td>
+                    </tr>
+                    <tr>
+                        <td>?togglesubmessages [on|off]</td>
+                        <td>Toggles sub messages on or off in a channel. 'On' or 'Off" must be specified.</td>
+                        <td>Operator</td>
+                    </tr>
+                    <tr>
+                        <td>?togglecheermessages [on|off]</td>
+                        <td>Toggles cheer messages on or off in a channel. 'On' or 'Off" must be specified.</td>
+                        <td>Operator</td>
+                    </tr>
+                    <tr>
+                        <td>?togglegiftmessages [on|off]</td>
+                        <td>Toggles gift messages on or off in a channel. 'On' or 'Off" must be specified.</td>
+                        <td>Operator</td>
+                    </tr>
+                    <tr>
+                        <td>?togglecounters [on|off]</td>
+                        <td>Toggles counters on or off in a channel. 'On' or 'Off" must be specified.</td>
+                        <td>Operator</td>
+                    </tr>
+                    <tr>
+                        <td>?addtoggler [username]</td>
+                        <td>Adds the role toggler to a given username.</td>
+                        <td>Operator</td>
+                    </tr>
+                    <tr>
+                        <td>?removetoggler [username]</td>
+                        <td>Removes the role toggler from a given username.</td>
+                        <td>Operator</td>
+                    </tr>
+                    <tr>
+                        <td>?addcounter [username]</td>
+                        <td>Adds the role counter to a given username.</td>
+                        <td>Operator</td>
+                    </tr>
+                    <tr>
+                        <td>?removecounter [username]</td>
+                        <td>Removes the role toggler from a given username.</td>
+                        <td>Operator</td>
+                    </tr>
+                    <tr>
+                        <td>?roles [username ?]</td>
+                        <td>Returns the roles for yourself or a given username.</td>
+                        <td>Operator</td>
+                    </tr>
+                    <tr>
+                        <td>?operators</td>
+                        <td>Returns a list of operators for the channel.</td>
+                        <td>Operator</td>
+                    </tr>
+                    <tr>
+                        <td>?counters</td>
+                        <td>Returns a list of counters for the channel.</td>
+                        <td>Operator</td>
+                    </tr>
+                    <tr>
+                        <td>?togglers</td>
+                        <td>Returns a list of togglers for the channel.</td>
+                        <td>Operator</td>
+                    </tr>
+                    <tr>
+                        <td>?addsubmessage [months] [message]</td>
+                        <td>Adds a sub message for a given number of months.</td>
+                        <td>Operator</td>
+                    </tr>
+                    <tr>
+                        <td>?editsubmessage [months|default] [message]</td>
+                        <td>Edits a sub message for a given number of months or the default sub message.</td>
+                        <td>Operator</td>
+                    </tr>
+                    <tr>
+                        <td>?delsubmessage [months]</td>
+                        <td>Deletes a sub message for a given number of months.</td>
+                        <td>Operator</td>
+                    </tr>
+                    <tr>
+                        <td>?addcheermessage [bits] [message]</td>
+                        <td>Adds a cheer message for a given number of bits or more.</td>
+                        <td>Operator</td>
+                    </tr>
+                    <tr>
+                        <td>?editcheermessage [bits|default] [message]</td>
+                        <td>Edits a cheer message for a given number of bits or more or the default cheer message.</td>
+                        <td>Operator</td>
+                    </tr>
+                    <tr>
+                        <td>?delcheermessage [bits]</td>
+                        <td>Deletes a cheer message for a given number of bits or more.</td>
+                        <td>Operator</td>
+                    </tr>
+                    <tr>
+                        <td>?addgiftmessage [gifts] [message]</td>
+                        <td>Adds a gift message for a given number of gift subs.</td>
+                        <td>Operator</td>
+                    </tr>
+                    <tr>
+                        <td>?editgiftmessage [gifts|default] [message]</td>
+                        <td>Edits a gift message for a given number of gift subs or the default gift message.</td>
+                        <td>Operator</td>
+                    </tr>
+                    <tr>
+                        <td>?delgiftmessage [gifts]</td>
+                        <td>Deletes a gift message for a given number of gift subs.</td>
+                        <td>Operator</td>
+                    </tr>
+                    <tr>
+                        <td>?editdirectgiftmessage [message]</td>
+                        <td>Edits the direct gift message.</td>
+                        <td>Operator</td>
+                    </tr>
+                    <tr>
+                        <td>?addoperator [username]</td>
+                        <td>Adds the role operator to a given username.</td>
+                        <td>Moderator</td>
+                    </tr>
+                    <tr>
+                        <td>?removeoperator [username]</td>
+                        <td>Removes the role operator from a given username.</td>
+                        <td>Moderator</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id='footer'>
+
+        </div>
+        <script>
+            const navbar = document.getElementById('navbar');
+            const arrow = document.getElementById('navbar-arrow');
+            const trigger = document.getElementById('navbar-trigger');
+            navbar.style.left = '-300px';
+            document.onclick = function (e) {
+                if (!(e.target === navbar || e.target === trigger || e.target === arrow)) {
+                    toggleNavBar(false);
+                } else if (e.target === trigger || e.target === arrow) {
+                    if (navbar.style.left === '-300px') {
+                        toggleNavBar(true);
+                    } else {
+                        toggleNavBar(false);
+                    }
+                }
+            }
+            function toggleNavBar(toggle) {
+                if (toggle) {
+                    navbar.style.left = '0px';
+                    arrow.style.transform = 'rotate(-180deg)';
+                } else {
+                    navbar.style.left = '-300px';
+                    arrow.style.transform = 'rotate(0deg)';
+                }
+            }
+        </script>
+    </body>
+</html>
