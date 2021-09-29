@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EpicestBot Documentation</title>
+        <link href='../styles/index.css' type='text/css' rel='stylesheet'>
+        <link href='https://themostepicest.github.io/cloud/botlogo.png' type='image/png' rel='shortcut icon'>
+    </head>
+    <body>
+        <div id='header'>
+            <a href='.'><img draggable='false' src='https://themostepicest.github.io/cloud/botlogo.png'></a>
+            <h1>EpicestBot</h1>
+        </div>
+        <div id='navbar-trigger' onclick='toggleNavBar()'>
+            <img src='../resource/arrow.png' draggable='false' id='navbar-arrow'>
+        </div>
+        <div id='navbar'>
+            <h3 class='navbar-link'><a href='../commands/'>Built-in Commands</a></h3>
+            <h3 class='navbar-link'><a href='../custom-commands/'>Custom Commands</a></h3>
+            <h3 class='navbar-link'><a href='.'>User Level</a></h3>
+        </div>
+        <div id='body'>
+            <div id='content'>
+                <h2 id='content-title'>User Level</h2>
+                <p class='content-p'>This isn't done, so enjoy this placeholder text.</p>
+            </div>
+        </div>
+        <div id='footer'>
+
+        </div>
+        <script>
+            const navbar = document.getElementById('navbar');
+            const trigger = document.getElementById('navbar-arrow');
+            navbar.style.left = '-300px';
+            function toggleNavBar() {
+                if (navbar.style.left === '-300px') {
+                    navbar.style.left = '0px';
+                    trigger.style.transform = 'rotate(-180deg)';
+                } else {
+                    navbar.style.left = '-300px';
+                    trigger.style.transform = 'rotate(0deg)';
+                }
+            }
+        </script>
+    </body>
+</html>
